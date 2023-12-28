@@ -1,7 +1,7 @@
 
 let weather = {
   "apikey": "e36a1fcc8d084b42bdbb951bea275a23",
-  fetchweather: function (city) {
+  Fetch_Weather: function (city) {
     fetch(
       "https://api.weatherbit.io/v2.0/current?city=" 
       + city 
@@ -44,4 +44,5 @@ document.querySelector(".search-bar").addEventListener("keyup", function(event) 
   }
 })
 
-weather.fetchWeather("Denver");
+
+weather.Fetch_Weather("Denver")
